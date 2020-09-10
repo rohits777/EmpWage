@@ -21,7 +21,7 @@ do
 	DayHours="$( WorkHours $randomCheck )"
 	DailyWage=$(( $DayHours * $WagePerHour ))
 	hours=$(( $hours + $DayHours ))
-          echo -e "TotalHours:$hours"
 	MonthlyWage=$(( $MonthlyWage + $DailyWage ))
-        days=$(( $days + 1 ))
+        echo -e "DailyWage:$DailyWage       TotalWage:$MonthlyWage"
+       days=$(( $days + 1 ))
 done
