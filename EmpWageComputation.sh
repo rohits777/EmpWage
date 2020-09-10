@@ -22,6 +22,7 @@ do
 	DailyWage=$(( $DayHours * $WagePerHour ))
 	hours=$(( $hours + $DayHours ))
 	MonthlyWage=$(( $MonthlyWage + $DailyWage ))
-        echo -e "DailyWage:$DailyWage       TotalWage:$MonthlyWage"
-       days=$(( $days + 1 ))
+        echo -e "Day:$days       DailyWage:$DailyWage       TotalWage:$MonthlyWage    Hours:$hours" 
+
+days=$(( $days + 1 ))
 done
